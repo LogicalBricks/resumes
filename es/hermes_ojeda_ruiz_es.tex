@@ -1,0 +1,205 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letterpaper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+% character encoding
+\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+
+\usepackage[scale=0.75]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Hermes}
+\familyname{Ojeda Ruiz}
+\address{2a Privada de la Noria 209A }{Oaxaca de Juarez, Oaxaca     C.P. 68005}    % optional, remove the line if not wanted
+\phone{(+52)951~513~0827}                      % optional, remove the line if not wanted
+\mobile{951~192~5750}                    % optional, remove the line if not wanted
+\email{hermes.ojeda@logicalbricks.com}                      % optional, remove the line if not wanted
+%\photo[64pt][0.4pt]{picture.png}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\maketitle
+
+\section{Educación}
+\cventry{2000--2007}{Ingeniero en Computación}{Universidad Tecnológica de la Mixteca}{Huajuapan de León, Oaxaca}{\textit{Ingeniero}}{Titulación por examen CENEVAL con Alto Rendimiento Académico, 2008.}  % arguments 3 to 6 can be left empty
+
+\section{Certificaciones}
+\cventry{2014}{CSP -- Certified Scrum Professional}{Scrum Alliance/Scrum México}{México, DF}{}{}
+\cventry{2014}{CSPO -- Certified Scrum Product Owner}{Scrum Alliance/Scrum México}{México, DF}{}{}
+\cventry{2014}{CSM -- Certified Scrum Master}{Scrum Alliance/Scrum México}{México, DF}{}{}
+\cventry{2013}{CSD -- Certified Scrum Developer}{Scrum Alliance/Scrum México}{México, DF}{}{}
+
+\section{Logros y reconocimientos}
+\cventry{2008}{Mención Honorífica}{ACM ICPC 2007 World Finals}{Tokyo, Japón}{}{}
+\cventry{2007}{1er. Lugar}{2007 ACM ICPC México--Centroamérica}{Puebla, México}{}{}
+\cventry{2005}{Mención Honorífica}{ACM ICPC 2006 World Finals}{Shanghai, China}{}{}
+\cventry{2005}{2o. Lugar}{2005 ACM ICPC México--Centroamérica}{Veracruz, México}{}{}
+
+\section{Experiencia profesional}
+
+\cventry{Desde 2011}{LogicalBricks}{Scrum Master/Encargado de Tecnologías OpenSource/Desarrollador}{Oaxaca de Juárez, Oaxaca}{}{ Administración de los servidores que alojan los diferentes servicios. Desarrollar, actualizar y mantener los principales productos de la empresa, utilizando metodologías ágiles con el marco de trabajo Scrum y técnicas como TDD y BDD.\newline{}%
+  \newline{}
+  Actividades importantes:%
+  \begin{itemize}%
+    \item Planeación, modelado y construcción de un applicación web para automatizar la descarga de facturas electrónicas a través del portal del SAT. [Desarrollado con Ruby on Rails en 1 mes, usando prácticas ágiles]
+    \item Planeación, modelado y construcción de un applicación web para la gestión de información estadística del sector de obras públicas del estado de Oaxaca. [Desarrollado con Ruby on Rails en 1 mes, usando prácticas ágiles]
+    \item Participación en el desarrollo de una plataforma de e-Learning para Etherpros. Dicha plataforma está constituida por 2 módulos principales: LMS(Learning Management System) y e-Commerce. Desarrollado en Ruby on Rails.
+    \item Modelado y construcción de un sistema de captura, sellado y timbrado de facturación electrónica implementando el modelo exigido por el SAT para un candidato a convertirse en PAC. [Desarrollado con Ruby on Rails en 3 semanas]
+    \item Planeación, modelado y construcción de un sistema para reportar el IDE (Impuesto a los depósitos en efectivo) al SAT, diseñado especialmente para Cajas de Ahorro e Instituciones financieras en México. [Desarrollado con Ruby on Rails en un tiempo de 1.5 meses, usando BDD]
+    \item Planeación, modelado y construcción de un applicación web para facturación usando Código de Barras Bidimensional, cumpliendo con las especificaciones del SAT. [Desarrollado con Ruby on Rails en 2 meses, usando BDD]
+    \item Planeación, modelado y construcción de un applicación web para facturación electrónica, cumpliendo con las especificaciones del SAT. [Desarrollado con Ruby on Rails en 1 mes, usando TDD]
+    \item Configuración de la infraestructura de servicios internos para \href{http://www.alphachem.com.mx}{AlphaChem}.
+    \item Maquetado de la página de la empresa \href{http://logicalbricks.com}{http://logicalbricks.com}.
+    \item Aportaciones a proyectos OpenSource como: waz-storage, github-notifier, Nela, Chakra GNU/Linux.
+\end{itemize}}
+
+\cventry{Desde 2014}{Instituto Tecnológico de Oaxaca}{Catedrático}{}{}{ Actividades importantes:%
+  \begin{itemize}%
+    \item Impartición de la clase de Inteligencia Artificial.
+    \item Impartición de la clase de Sistemas Programables.
+  \end{itemize}}
+
+\cventry{2010--2011}{Freelance}{Consultor/SysAdmin/Desarrollador}{}{}{ Actividades importantes:%
+  \begin{itemize}%
+    \item Configuración y puesta a punto de un servidor Debian con DHCP, DNS, Squid y Shorewall en \href{http://apointmexico.com/}{Apoint México}.
+    \item Planear los servicios basados en tecnologías OpenSource para \href{http://highmicro.com}{HighMicro}.
+    \item Configurar y administrar un firewall en OpenBSD en hardware empotrado con servicios de ruteo, balanceo de carga y administración equitativa del ancho de banda en un Centro de Negocios.
+    \item Configurar y administrar una solución de Red Hat Enterprise Virtualization para despliegue de Escritorios Virtuales.
+    \item Curso: Introducción a Ruby on Rails en \href{http://apointmexico.com/}{Apoint México}.
+    \item Adaptación del código de la extensión de Joomla! \href{https://github.com/hermes-logicalbricks/Efemerides}{Efemérides} para el \href{http://deadcanadians.ca/}{sitio DeadCanadians}.
+  \end{itemize}}
+
+\cventry{2008--2010}{KadaSoftware, Universidad Tecnológica de la Mixteca}{SysAdmin/Desarrollador}{Huajuapan de León, Oaxaca}{}{ Conformación de esquemas de negocio basados en tecnologías OpenSource, transferencia de conocimientos de desarrollo web y administración de todos los servidores y servicios de red de la empresa.\newline{}%
+  \newline{}
+  Actividades importantes:%
+  \begin{itemize}%
+    \item Desarrollo de un sistema de activación de software. El objetivo del proyecto era agregar llaves de productos y fechas de expiración al software de forma segura. [Java, Cifrado]
+    \item Administrar los servidores web, de correo y desarrollo, así como el control de un sistema de nómina de diversas empresas.
+    \item Planear y controlar los servicios OpenSource y Web de la empresa.
+    \item Desarrollo de extensiones para Joomla!: para manejo de registros específicos del cliente, y para mostrar el estado del clima en una página de gobierno.
+    \item Curso: ``Desarrollando componentes de Joomla! usando el patrón MVC'' a empleados de la empresa.
+    \item Configuración y puesta a punto de algunos servidores: Servidor de archivos, Espejos internos de los servidores de paquetes de Debian y Ubuntu, Servidor de máquinas virtuales usando KVM.
+    \item Administrar la conexión de red de la empresa utilizando un firewall configurado con OpenBSD
+    \item Introducir tecnologías de Desarrolo Ágil en la empresa, principalmente Ruby on Rails.
+\end{itemize}}
+
+
+\section{Lenguajes}
+\cvlanguage{Español}{Nativo}{Nativo}
+\cvlanguage{Inglés}{Bueno}{Buen nivel para lectura de documentos técnicos}
+
+\section{Herramientas y lenguajes de Desarrollo}
+\cvcomputer{Lenguajes}{C (avanzado), C++ (avanzado), Java (básico), PHP (intermedio), Python (intermedio), Ruby (avanzado), SQL (intermedio)}{Frameworks y Especificaciones}{Ruby on Rails, CakePHP, Qt, Joomla, Prototype, WebServices, RESTful}
+\cvcomputer{Web}{HTML (avanzado), JavaScript (intermedio), CSS (intermedio)}{IDE}{Vim (avanzado), Eclipse, Netbeans, Aptana}
+\cvcomputer{DBMS}{MySQL, PostgreSQL, Sqlite}{Sistemas Operativos}{Linux(Debian, RedHat, Ubuntu, ArchLinux, Chakra), *nix (OpenBSD)}
+\cvcomputer{Administración de Sistemas}{Kernel-based Virtual Machines(KVM), Linux Terminal Server Project(LTSP), RedHat Enterprise Virtualization, Apache, Packet Filter(PF), Samba, Shorewall, Squid, DHCP, BIND, Tomcat}{SCM}{Git, Subversion}
+
+\section{Herramientas de Desarrollo relacionadas con Ruby on Rails}
+\cvcomputer{Pruebas}{Rspec, Cucumber, Capybara, Shoulda, FactoryGirl}{Despliegue}{Capistrano, Apache, Passenger, REE, Nginx, Unicorn}
+\cvcomputer{Vista}{Haml, JQuery, Coffeescript, Saas, Bootstrap}{Otros}{RVM, JRuby, Sinatra, Savon, Waz-Storage, Middleman, Delayed-job, Sidekiq, State Machine, Watir}
+
+\section{Talleres y Conferencias}
+
+\subsection{Asistente}
+\cventry{2014}{Curso CSPO}{Certified Scrum Product Owner}{México, DF}{}{Track de 24 horas para la gestión de productos ágiles, impartido por Alan Cyment.}
+\cventry{2014}{Curso CSM}{Certified Scrum Master}{México, DF}{}{Track de 24 horas de entrenamiento para la gestión y estimación de proyectos ágiles, impartido por Mike Beedle.}
+\cventry{2013}{Curso CSD - Full Track}{Certified Scrum Developer}{México, DF}{}{Track de 40 horas de entrenamiento para la planeación y desarrollo de proyectos ágiles.}
+\cventry{2008}{Taller 'Programación de Microcontroladores con Software Libre'}{II Congreso Internacional de Ingeniería en Sistemas}{Tehuacán, Puebla}{}{Se conocieron y utilizaron herramientas libres para la programación de microcontroladores.}
+\cventry{2007}{Google ACM Event}{Google}{New York, USA}{}{Ciclo de conferencias y reuniones sobre el trabajo en Google para los finalistas mundiales del ACM ICPC 2007.}
+\cventry{2006}{Scientific Visualization}{III Pan-American Advanced Institute(PASI)}{Huajuapan, Oaxaca}{}{Cursos de Ciencias de la Computación e Ingeniería para Estudiantes de Postgrado.}
+\cventry{2006}{Taller 'Programación Extrema (eXtreme Programming)'}{I Simposium de Software Libre de la Mixteca}{Huajuapan, Oaxaca}{}{Se abordaron las bases de programación extrema orientándolo al lenguaje Python.}
+
+\subsection{Ponente}
+\cventry{2007}{Local ACM ICPC 2008}{UTM}{Huajuapan, Oaxaca}{}{Jurado y Elaboración de problemas para el concurso local del ACM ICPC 2008 en la Universidad Tecnológica de la Mixteca.}
+\cventry{2007}{Proyecto OLPC}{6o. Seminario de Linux}{Tehuacán, Puebla}{}{Ponencia en conjunto con Manuel Montoya sobre el proyecto OLPC y sus implicaciones en el ámbito educativo.}
+\cventry{2007}{Introducción al ACM ICPC}{6o. Seminario de Linux}{Tehuacán, Puebla}{}{Ponencia sobre las reglas, estrategias y experiencias del ACM ICPC.}
+\cventry{2007}{Taller 'Programación en C' }{6o. Seminario de Linux}{Tehuacán, Puebla}{}{Taller para motivar a los asistentes a la programación en C usando códigos muy simples pero que permitían lograr grandes resultados.}
+\cventry{2007}{Taller 'C con SDL' }{6o. Seminario de Linux}{Tehuacán, Puebla}{}{Taller introductorio para el uso de la biblioteca SDL con lenguaje C.}
+\cventry{2008}{Programación de Componentes en Joomla! usando el Patrón de Diseño MVC}{II Congreso Internacional de Ingeniería en Sistemas}{Tehuacán, Puebla}{}{Introducción a los componentes en Joomla! utilizando un patrón de diseño MVC.}
+\cventry{2009}{Proyecto Piloto 'Red de Computadoras Recicladas'}{}{San Baltazar Guelavila, Oaxaca}{}{Presentación de una red de computadoras recicladas utilizando LTSP para la telesecundaria de la localidad.}
+\cventry{2010}{Red de computadoras recicladas utilizando LTSP}{Foro Nacional de Tecnologías Apropiadas}{Oaxaca, Oaxaca}{}{Exposición de la experiencia de utilizar computadoras recicladas para construir centros de cómputo para escuelas de bajos recursos.}
+\cventry{2010}{Kids on Computers}{III Simposio de Software Libre de la Mixteca}{Huajuapan, Oaxaca}{}{Exposición junto con Thomas Peters de la experiencia del trabajo realizado con la fundación Kids on Computers.}
+\cventry{2010}{Ruby on Rails}{III Simposio de Software Libre de la Mixteca}{Huajuapan, Oaxaca}{}{Introducción al framework Ruby on Rails.}
+\cventry{2010}{Ruby on Rails}{1er. Aniversario del Instituto Tecnológico Superior de Teposcolula}{Teposcolula, Oaxaca}{}{Introducción al framework Ruby on Rails.}
+\cventry{2010}{Taller 'Introducción a OpenBSD'}{1er. Aniversario del Instituto Tecnológico Superior de Teposcolula}{Teposcolula, Oaxaca}{}{Taller introductorio de instalación del sistema y configuración de servicios básicos de red.}
+\cventry{2011}{El uso del Software Libre en la Educación}{Foro Regional Plan Estatal de Desarrollo 2011-2016}{Oaxaca, Oaxaca}{}{Propuesta del uso de software libre en la educación como herramienta de apoyo para mejorar la educación en Oaxaca.}
+\cventry{2011}{Herramientas Libres para Iniciar una empresa de Desarrollo de Software}{V Simposium de Software Libre de la Mixteca}{Huajuapan, Oaxaca}{}{Se abordaron las diferentes herramientas libres que nos permiten mantener el funcionamiento de una empresa de desarrollo de software, reduciendo costos pero con resultados profesionales.}
+\cventry{2011}{Taller 'Soekris y OpenBSD'}{V Simposium de Software Libre de la Mixteca}{Huajuapan, Oaxaca}{}{Se abordó la utilización de OpenBSD como firewall y su configuración directamente sobre hardware empotrado.}
+\cventry{2012}{A una año de una empresa basada en Software Libre}{VI Simposium de Software Libre de la Mixteca}{Huajuapan, Oaxaca}{}{Conferencia para hacer una remembranza de un año de funcionamiento de LogicalBricks Solutions.}
+\cventry{2013}{BDD - Desarrollo Guiado por Comportamiento}{VII Simposium de Software Libre de la Mixteca}{Huajuapan, Oaxaca}{}{Conferencia y Taller para explicar en qué consiste BDD y su utilidad en el desarrollo de software.}
+\cventry{2014}{Refactoring - Quitando lo apestoso al código}{VIII Simposium de Software Libre de la Mixteca}{Huajuapan, Oaxaca}{}{Conferencia y Taller para explicar en qué la técnica de Refactoring y por qué es importante en el desarrollo de software.}
+
+
+\subsection{Organizador}
+\cventry{2011}{TechDay Oaxaca 2011}{}{Oaxaca, Oaxaca}{}{Serie de conferencias realizadas en Cd. Administrativa para los encargados del área de informática del Gobierno del Estado, con la presencia de IBM, Huawei, RedHat, Team, MGS y LogicalBricks.}{}
+\cventry{2013}{Global Day Code Retreat 2013}{}{Oaxaca, Oaxaca}{}{Organización de este evento realizado a nivel internacional para hacerlo en la Cd. de Oaxaca.}{}
+\cventry{2014}{1er. Coding Dojo}{}{Oaxaca, Oaxaca}{}{Organización del primer Coding Dojo de la comunidad oaxaca.rb.}{}
+\cventry{2014}{Coding Dojo}{}{Oaxaca, Oaxaca}{}{Organización los Coding Dojo quincenales de la comunidad oaxaca.rb.}{}
+
+
+\subsection{Aportaciones OpenSource y otras actividades}
+\cventry{Desde 2014}{\href{http://oaxacarb.org}{oaxaca.rb}}{Miembro}{}{}{\begin{itemize}%
+    \item Participación activa en la comunidad con demostraciones y ponencias explicando algún tema relacionado con Ruby.
+    \item Fungir como facilitador en las actividades de los diversos Coding Dojos de la comunidad.
+    \item Participación en la administración de la página de la comunidad.
+  \end{itemize}}
+
+\cventry{Desde 2009}{\href{http://kidsoncomputers.org}{Kids on Computers}}{Voluntario}{}{}{\begin{itemize}%
+    \item Instalación de un laboratorio con 30 computadoras recicladas para la escuela primaria ``Dieciocho de Marzo'' en Huajuapan, Oaxaca.
+    \item Instalación de un laboratorio con computadoras recicladas y LTSP en el ``Centro de Atención Múltiple 27'' para niños con discapacidad de Tlaxiaco, Oaxaca.
+    \item Instalación de un laboratorio con computadoras en el ``Centro Santo Domingo'' Huajuapan, Oaxaca.
+    \item Brindar soporte a los diferentes laboratorios instalados en el sur de México.
+  \end{itemize}}
+
+\cventry{Desde 2009}{\href{http://hermes-logicalbricks.github.com/Efemerides/}{Efemérides}}{Maintainer}{Extensión de Joomla!}{}{\begin{itemize}%
+    \item Una sencilla extensión de Joomla! para administrar fechas importantes.
+    \item Cuenta con soporte para Joomla 2.5.
+  \end{itemize}}
+
+\cventry{Desde 2010}{\href{http://github.com/LogicalBricks/Kaavi}{Ka'avi}}{Maintainer}{}{}{\begin{itemize}%
+    \item Aplicación desarrollada en Ruby on Rails que sirva de motor para la creación de diccionario de lenguas indígenas.
+    \item Se encuentra en desarrollo.
+  \end{itemize}}
+
+\cventry{Desde 2011}{\href{http://github.com/LogicalBricks/wicap-php}{wicap-php}}{Maintainer}{}{}{\begin{itemize}%
+    \item Portal Cautivo diseñado para funcionar con OpenBSD.
+    \item Con soporte para OpenBSD 5.1.
+  \end{itemize}}
+
+
+\cventry{Desde 2012}{\href{http://nelaproject.blogspot.com.es/}{Nela}}{Desarrollador}{}{}{\begin{itemize}%
+    \item Proyecto que tiene como objetivo el ayudar al aprendizaje de la escritura Braille a personas con discapacidad visual.
+    \item Se generó un paquete para Chakra a través del CCR.
+  \end{itemize}}
+
+\cventry{Desde 2012}{\href{http://chakra-linux.org/}{Chakra GNU\/Linux}}{Empaquetador}{}{}{Se mantienen 5 paquetes a través de CCR: epson--inkjet--printer--escpr, nela, pdftk-bin, libgcj, y uml\_utilities}
+
+\cventry{Desde 2012}{Aportaciones adicionales}{Desarrollador}{}{}{Algunas aportaciones adicionales que se han realizado a diversos proyectos OpenSource:
+  \begin{description}%
+    \item[\href{http://github.com/johnnyhalife/waz-storage/}{waz-storage}] Implementación de la funcionalidad para autenticación mediante Shared Access Signature.
+    \item[\href{http://github.com/abiczo/github-notifier/}{github-notifier}] Implementación del soporte para Organizaciones utilizando la nueva API de Github.
+    \item[\href{https://github.com/zakird/wkhtmltopdf\_binary\_gem}{wkhtmltopdf\_binary}] Adaptación para permitir que la gema pueda ser instalada directamente de github.
+  \end{description}}
+\end{document}
+
+
+%% end of file `template_en.tex'.
