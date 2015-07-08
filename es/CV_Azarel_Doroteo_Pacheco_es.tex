@@ -1,0 +1,155 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,letterpaper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[spanish]{babel}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage[T1]{fontenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Azarel}
+\familyname{Doroteo Pacheco}
+\address{Andador Ceiba 110, Fracc. Pozas Arcas}{Oaxaca de Juarez, Oaxaca     C.P. 68050}    % optional, remove the line if not wanted
+\phone{(+52)951~513~0827}                      % optional, remove the line if not wanted
+\mobile{951~103~9283}                    % optional, remove the line if not wanted
+\email{azarel.doroteo@logicalbricks.com}                      % optional, remove the line if not wanted
+%\photo[64pt][0.4pt]{picture.png}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+
+\section{Datos generales}
+\cventry{Nombre}{Azarel Doroteo Pacheco}{}{}{}{}
+\cvline{CURP}{DOPA810314HOCRCZ02}
+\cvline{Estado Civil}{Soltero}
+
+\section{Grados académicos}
+\cventry{1998--2003}{Ingeniero en computación}{Universidad Tecnológica de la Mixteca}{Huajuapan de León, Oaxaca, México}{\textit{Licenciatura}}{Titulado por CENEVAL, con Testimonio de Alto Rendimiento Académico, 2006.}  % arguments 3 to 6 can be left empty
+\cventry{1995--1998}{Bachiller técnico}{CBTis 123}{Oaxaca de Juárez, Oaxaca, México}{\textit{Bachillerato con especialidad en Programación}}{}
+
+\section{Experiencia laboral}
+\subsection{}
+
+
+\cventry{2011--2015}{Scrum master certificado/Scrum developer certificado/Arquitecto de Software}{LogicalBricks}{Oaxaca de Juárez, Oaxaca}{}{Desarrollo, mantenimiento y actualización de sistemas propios. Conjunción de un equipo de alto desempeño, capaz de trabajar bajo presión y brindar resultados en tiempos reducidos. Implantación de prácticas y mecanismos basados en metodologías ágiles, como Scrum y BDD.\newline{}%
+  \newline{}
+  Proyectos destacados:%
+  \begin{itemize}%
+    \item Modelado y construcción de un sistema de captura, sellado y timbrado de facturas digitales implementando el modelo dictado por el SAT para una empresa aspirante a PAC [construido en RoR en un tiempo de 3 semanas]
+    \item Planeación, modelado y construcción de un sistema para declarar el Impuesto al Depósito en Efectivo para cajas de ahorro [construido en RoR en un tiempo de 1.5 meses, usando BDD]
+    \item Construcción de un sistema para facturación mediante código de barras bidimensional [construido en RoR en un tiempo de 2 meses, usando BDD]
+    \item Creación y contribución en gemas del ecosistema Ruby/Rails; como rieles, to\_xls, haml-rails, identificamex
+    \item Construcción de un LMS (Learning Management System) integrado con una tienda de e-comerce
+    \item Planeación, modelado y construcción de un sistema de facturación adaptado a las nuevas disposiciones oficiales para facturación electrónica en México
+    \item Planeación, modelado y construcción de un sistema para administrar gastos y facturación para el Gobierno del Estado de Oaxca
+\end{itemize}}
+
+\cventry{2014-2015}{Catedrático}{Instituto Tecnológico de Oaxaca}{Oaxaca de Juárez, Oaxaca}{}{Catedrático de la carrera de Ingeniería en Sistemas Computacionales.\newline{}%
+  \newline{}
+  Materias impartidas:%
+  \begin{itemize}%
+    \item Ingeniería de Software
+    \item Paradigmas de Software Orientado a Frameworks y Aspectos
+    \item Componentes y Patrones de diseño
+    \item Fundamentos de Ingeniería de Software
+\end{itemize}}
+
+\cventry{2006--2011}{Líder Técnico, Líder de Proyecto y Desarrollador}{KadaSoftware, Universidad Tecnológica de la Mixteca}{Huajuapan de León, Oaxaca}{}{Apoyo en la consolidación de la empresa, desempeñando diversos roles y transfiriendo conocimiento a los desarrolladores. Implantación de buenas prácticas de desarrollo, como pruebas automatizadas, liberaciones periódicas cortas, uso de controlador de versiones y codificación de calidad. Uso efectivo de patrones de diseño en el modelado de sistemas para la solución de problemas.\newline{}%
+  \newline{}
+  Proyectos destacados:%
+  \begin{itemize}%
+    \item Creación de arquitectura y definición de tecnologías y plataformas para el Software Escolar Integral del Sistema de Universidades del Estado de Oaxaca. [a desarrollar en RoR]
+    \item Participación en el análisis y construcción de la primera etapa del portal Web del Gobierno del Estado de Oaxaca, en colaboración con la Secretaría Técnica [construido usando Joomla].
+    \item Construcción de un sistema administrativo y de sincronización de datos de extraidos de LDAP, PBX y comunicación con teléfonos Avaya y Cisco [construido usando J2EE].
+    \item Modelado y construcción de un sistema de sincronización de chat y llamadas concurrentes para un Call Center de CFE. [Construido usando J2EE]
+\end{itemize}}
+
+
+\section{Idiomas}
+\cvlanguage{Español}{Nativo}{Lengua nativa}
+\cvlanguage{Inglés}{Competente}{Buen nivel de lectura en documentos técnicos.}
+
+\section{Lenguajes y herramientas de desarrollo en general}
+\cvcomputer{Lenguajes}{C (avanzado), C++ (avanzado), Java (avanzado), PHP (intermedio), Python (básico), Ruby (avanzado), SQL (avanzado), Erlang (básico), Elixir (básico)}{Web}{HTML (avanzado), JavaScript/CofeeScript (intermedio), CSS (intermedio)}
+\cvcomputer{Frameworks y especificaciones}{Ruby on Rails, JSF, Hibernate, JDBC, JPA, JUnit, JBoss-Seam, CakePHP, Qt, Joomla, Prototype, Scriptaculous, WebServices, RESTful}{IDE}{Eclipse, NetBeans, uso avanzado de Vim}
+\cvcomputer{Manejadores de base de datos}{MySQL, PostgreSQL, Sqlite}{Sistemas Operativos}{Linux, *nix}
+
+\section{Herramientas de desarrollo dentro del ecosistema RoR}
+\cvcomputer{Testing}{Rspec, Minitest, Cucumber, Capybara, Jasmine, Webrat, Mocha, Shoulda}{Deployment}{ Capistrano, Apache, Passenger, Nginx}
+\cvcomputer{Vista}{Simpleform, Haml, JQuery, Backbonejs, CoffeeScript}{Misceláneo}{FactoryGirl, JRuby, Sinatra, Heroku, RVM, Lotus}
+
+\section{Intereses}
+\cvline{Software Libre}{\small Seguidor y promotor del Software Libre como mecanismo para lograr independencia tecnológica, pluralizar el conocimiento y potenciar el mercado.}
+\cvline{Metodologías Ágiles}{\small Seguidor de las metodologías ágiles como método efectivo para desarrollar software de calidad, realmente centrado en el usuario, y donde las personas son más importantes que los procesos.}
+\cvline{Patrones de Diseño}{\small Promotor de la re-utilización de diseños/modelados efectivos, prácticos y elegantes basados en soluciones ya conocidas para planteamientos similares.}
+\cvline{Mejores Prácticas}{\small En búsqueda constante de mejorar la forma de desarrollar Software mediante las mejores prácticas en las diversas etapas del desarrollo.}
+
+\section{Características}
+\cvlistitem{Comprometido, colaborativo, de rápido aprendizaje, facilidad de palabra, desempeño ético, autodidacta, apasionado por el desarrollo de Software.}
+\cvlistitem{Interesado en la cultura y el deporte como medios para mejorar la calidad de vida y los niveles educativo y social. Aficionado a la música, la fotografía y la literatura.}
+
+
+\section{Talleres y conferencias}
+\subsection{Asistente}
+\cventry{2006-2007}{Circuito Tecnológico}{México, DF}{Organizado por la Secretaría de Economía}{Impartido por SUN Microsystems}{Circuito de conferencias y talleres respecto a Metodologías ágiles y Equipos de alto desempeño.}
+\cventry{2008}{Spring, Hibernate y JSP}{Huajuapan de León, Oaxaca, México}{}{Impartido por el Programador Senior, Víctor Ramírez}{Taller de 40 hrs sobre JSP, Spring y Hibernate}
+\cventry{2009}{JBoss-Seam}{Toluca, Estado de México}{Organizado por el Instituto de la Función Registral del Estado de México}{Impartido por RedHat México}{Taller sobre JBoss-Seam como framework de desarrollo Java.}
+\cventry{2010}{Scrum y eXtreme Programming}{México, DF}{}{Impartido por la empresa Milestone Consulting}{Curso de 40 horas sobre Metodologías ágiles, Scrum y XP.}
+\cventry{2010}{Circuito Tecnológico}{México, DF}{Organizado por la Secretaría de Economía}{Impartido por Intel Corporation}{Seminarios sobre Programación paralela y Dispositivos de bajo consumo energético.}
+\cventry{2013}{Certified Scrum Master}{Mexico, DF}{}{by Mike Beedle}{Certified Scrum Master Course.}
+\cventry{2013}{Certified Scrum Developer}{Mexico, DF}{}{by Kleer}{Certified Scrum Developer course.}
+\subsection{Ponente}
+\cventry{2008}{Introducción a Ruby on Rails}{Tehuacán, Puebla, México}{Organizado por el Instituto Tecnológico de Tehuacán}{}{Taller de introducción a Ruby on Rails.}
+\cventry{2009}{Hibernate y JBoss-Seam}{Huajuapan de León, Oaxaca, México}{}{}{Taller de 20 horas sobre uso de Hibernate y JBoss-Seam para el equipo de desarrollo de KadaSoftware.}
+\cventry{2009}{Introducción a Joomla}{Huajuapan de León, Oaxaca, México}{}{Dentro del III Simposium de Linux de la Mixteca}{Taller de introducción a Joomla.}
+\cventry{2010}{Conociendo Ruby}{Huajuapan de León, Oaxaca}{}{Dentro del IV Simposio de Software Libre de la Mixteca}{Taller básico del lenguaje Ruby}
+\subsection{Organizador}
+\cventry{2005 - 2011}{I, II, III, IV, y V Simposium de Linux de la Mixteca}{UTM, Huajuapan de León Oaxaca, México}{}{}{Serie de Simposios organizados por el Grupo de Usuarios de Software Libre de la Mixteca, con la finalidad de difundir el uso de Software Libre}{}
+\cventry{2013-2014}{Coderetreat 2013 Oaxaca}{Oaxaca de Juárez, Oaxaca, México}{}{}{Día mundial de Coderetreat}{}
+\cventry{2013-2014}{Coding Dojos}{Oaxaca de Juárez, Oaxaca}{}{}{Serie de Talleres y Coding Dojos organizados por Oaxaca.rb, Comunidad de Usuarios Ruby de Oaxaca, México}{}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

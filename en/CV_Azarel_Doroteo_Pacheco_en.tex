@@ -1,0 +1,145 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Azarel}
+\familyname{Doroteo Pacheco}
+%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+\address{Andador Ceiba 110, Fracc. Pozas Arcas}{Oaxaca de Juarez, Oaxaca, México     C.P. 68050}     % optional, remove the line if not wanted
+\phone{(+52)951~513~0827}                      % optional, remove the line if not wanted
+\mobile{(+52)951~103~9283}                    % optional, remove the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
+\email{azarel.doroteo@logicalbricks.com}                          % optional, remove the line if not wanted
+%\homepage{www.johndoe.com}                    % optional, remove the line if not wanted
+%\extrainfo{CURP: DOPA810314HOCRCZ02}           % optional, remove the line if not wanted
+%\photo[64pt][0.4pt]{picture}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{General Development Languages and Tools}
+\cvcomputer{Languages}{C (advanced), C++ (advanced), Java (advanced), PHP (intermediate), Python (basic), Ruby (advanced), SQL (advanced), Erlang (basic), Elixir (basic)}{Web}{HTML (advanced), JavaScript/CofeeScript (intermediate), CSS (intermediate)}
+\cvcomputer{Frameworks and specifications}{Ruby on Rails, Hibernate, JDBC, JPA, JUnit, JBoss-Seam, CakePHP, Qt, Joomla, Prototype, Scriptaculous, WebServices, RESTful}{IDE}{Eclipse, NetBeans, advanced Vim}
+\cvcomputer{DBMS}{MySQL, PostgreSQL, Sqlite}{Operative Systems}{Linux, *nix}
+
+\section{RoR Related Development Tools}
+\cvcomputer{Testing}{Rspec, Minitest, Cucumber, Capybara, Jasmine, Webrat, Mocha, Shoulda}{Deployment}{ Capistrano, Apache, Passenger, Nginx }
+\cvcomputer{View}{Simpleform, Haml, JQuery, Backbonejs, CoffeeScript}{Miscellaneous}{FactoryGirl, JRuby, Sinatra, Heroku, RVM, Lotus}
+
+
+\section{Professional Experience}
+\subsection{}
+
+\cventry{2011-present}{Cerfified Scrum Master/Certified Scrum Developer/Software Architect}{LogicalBricks}{Oaxaca de Juárez, Oaxaca}{}{Developing, maintaining and upgrading company’s main projects. Formating a high performance team, capable of working under pressure and providing results in short time periods. Implementation of agile methodology practices like Scrum, pair programming and BDD.\newline{}%
+  \newline{}
+  Example Projects:%
+  \begin{itemize}%
+    \item Modeling and coding a system for a PAC applicant company to seal and stamp digital invoices implementing the model given by the Mexican Tax Agency [developed with RoR in a period of 3 weeks]
+    \item Planning, modeling and coding a system for financial institutions to report a specific tax to the Mexican Tax Agency [developed with RoR in a period of 1.5 months, using BDD]
+    \item Planning, modeling and coding a billing system using two-dimensional barcode, following the specification given by the Mexican Tax Agency [developed with RoR in a period of 2 months, using BDD]
+    \item Creating and contributing to some gems, such as rieles, to\_xls, identificamex, mortero.
+    \item Building a Learning Management System integrated with an e-commerce application for a Canadian company [Remotely outsourced]
+    \item Planning, modeling and coding a billing system for the new Mexican digital billing specification.
+    \item Planning, modeling and coding a system for the Oaxacan State Goverment Agency in charge of Public Service Announcement to manage the expenses and bills.
+\end{itemize}}
+
+\cventry{2014-2015}{Professor}{Instituto Tecnológico de Oaxaca}{Oaxaca de Juárez, Oaxaca}{}{Professor in the computer department.\newline{}%
+  \newline{}
+  Subjects:%
+  \begin{itemize}%
+    \item Software Engineering
+    \item Frameworks and Aspects Oriented Software Paradigms
+    \item Programming with Design Patterns and Components
+\end{itemize}}
+
+\cventry{2006--2011}{Senior Engineer/Technical Lead/Project Manager}{KadaSoftware, Universidad Tecnológica de la Mixteca}{Huajuapan de León, Oaxaca}{}{Participating as a key member in the company consolidation, performing various roles and transfering knowledge to junior developers. Implementation of best development practices, such as automatized testing, frequent releases in short development cycles, use of version controlling system, use of design patterns in system modeling and, in general, improvement of the code quality.\newline{}%
+  \newline{}
+  Featured Projects:%
+  \begin{itemize}%
+    \item Defining architecture, technolgies and platforms to be used in an integral scholar software for the Oaxaca System of State Universities [developed with RoR]
+    \item Participating in analysis and construction of the first stage of the website for the state government of Oaxaca, México, in collaboration with the Ministry of Tourism [built with Joomla].
+    \item Developing an administrative and synchronization system, used to interact with LDAP, PBX, and Avaya/Cisco phones [developed with J2EE].
+    \item Modeling and constructing a chat and concurrent call system for the CFE call center. The project was running 6 months behind schedule and shipped in 1 month. [develped with J2EE]
+\end{itemize}}
+
+
+\section{Education}
+\cventry{1998--2003}{Computer Engineering, Bachelor's degree}{Universidad Tecnológica de la Mixteca}{Huajuapan de León, Oaxaca, México}{Graduated trhough CENEVAL exam, with High Academic Performance Testimony, 2006.}{}  % arguments 3 to 6 can be left empty
+
+
+\section{Languages}
+\cvlanguage{Spanish}{Native}{Native}
+\cvlanguage{English}{Proficient}{Currently taking an English for Business course}
+
+\section{Interests}
+\cvline{Free Software}{\small Supporter and promoter of Free Software as a mechanism to achive technologic independency, knowledge pluralization and market strengthening.}
+\cvline{Agile Methodologies}{\small Supporter of agile methodologies as and effective way to develop high quality, really user centric software, where people are more important than processes.}
+\cvline{Desing Patterns}{\small Promoter of reuse of effective, practical and elegant modeling and designs, based on known solutions for similar approaches.}
+\cvline{Best practices}{\small In constant search for better ways of building software using best practices in various stages of development.}
+
+\section{Characteristics}
+\cvlistitem{Committed, collaborative, fast learning, ethical, autodidactic, passionate about Software Development.}
+\cvlistitem{Interested in culture and sports as means to improve the life quality and the social and educational levels. Fond of music, photography and literature.}
+
+
+\section{Workshops and Conferences}
+\subsection{As Attendee}
+\cventry{2006-2007}{Tecnological Circuit}{by SUN Microsystems}{México, DF}{Organized by Secretaría de Economía}{Circuit of workshops and conferences about Agile Methodologies and High Performance Teams.}
+\cventry{2008}{Spring, Hibernate and JSP}{by Senior Engineer, Víctor Ramírez}{Huajuapan de León, Oaxaca, México}{}{Workshop of 40 hours about JSP, Spring and Hibernate.}
+\cventry{2009}{JBoss-Seam}{by por RedHat México}{Toluca, Estado de México}{Organized by Instituto de la Funcion Registral del Estado de México}{Workshop about JBoss-Seam as Java development framework.}
+\cventry{2010}{Scrum and eXtreme Programming}{by Milestone Consulting}{México, DF}{}{Course of 40 hours about agile methodologies, Scrum and XP.}
+\cventry{2010}{Tecnological Circuit}{by Intel Corporation}{México, DF}{Organized by Secretaría de Economía}{Seminars on Parallel Programming and Energy Efficient Devices.}
+\cventry{2013}{Certified Scrum Master}{by Mike Beedle}{Mexico, DF}{}{Certified Scrum Master Course.}
+\cventry{2013}{Certified Scrum Developer}{by Kleer}{Mexico, DF}{}{Certified Scrum Developer course.}
+\subsection{As Speaker}
+\cventry{2008}{Introduction to Ruby on Rails}{Tehuacán, Puebla, México}{Organized by Instituto Tecnológico de Tehuacán}{}{Ruby on Rails workshop.}
+\cventry{2009}{Hibernate and JBoss-Seam}{Huajuapan de León, Oaxaca, México}{}{}{Workshop of 40 hours of Hibernate and JBoss-Seam for the KadaSoftware’s development team.}
+\cventry{2009}{Introduction to Joomla}{Huajuapan de León, Oaxaca, México}{}{In the III Mixteca Linux Symposium}{Joomla workshop.}
+\cventry{2010}{Discovering Ruby}{Huajuapan de León, Oaxaca}{}{In the IV Mixteca Free Software Symposium}{Ruby language workshop}
+\subsection{As Organizer}
+\cventry{2005 - 2011}{I, II, III, IV and V Mixteca Free Software Symposium}{UTM, Huajuapan de León Oaxaca, México}{}{}{Series of symposia organized by the Mixteca Free Software User Group, in order to spread the use of free/open source software}{}
+\cventry{2013, 2014}{Coderetreat 2013 and 2014 Oaxaca}{Oaxaca de Juárez, Oaxaca, México}{}{}{Global day of Coderetreat}{}
+\cventry{2013-present}{Coding Dojos}{Oaxaca de Juárez, Oaxaca, México}{}{}{Series of Coding Dojos sessions organized by Oaxaca.rb, Ruby Users Community Group from Oaxaca, México}{}
+
+
+%\clearpage\end{CJK*}                         % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
